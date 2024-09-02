@@ -1,3 +1,4 @@
+<!-- src/components/NavBar.vue -->
 <template>
   <nav>
     <router-link to="/">Home</router-link> |

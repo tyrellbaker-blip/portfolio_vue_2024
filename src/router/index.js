@@ -1,9 +1,10 @@
+// src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
-import ProjectsView from '../views/ProjectsView.vue'
-import ResumeView from '../views/ResumeView.vue'
-import ContactView from '../views/ContactView.vue'
+import ResearchView from '../views/ResearchView.vue'
+import ExperienceView from '../views/ExperienceView.vue'
+import VisionView from '../views/VisionView.vue'
 
 const routes = [
     {
@@ -17,24 +18,24 @@ const routes = [
         component: AboutView
     },
     {
-        path: '/projects',
-        name: 'Projects',
-        component: ProjectsView
+        path: '/research',
+        name: 'Research',
+        component: ResearchView
     },
     {
-        path: '/resume',
-        name: 'Resume',
-        component: ResumeView
+        path: '/experience',
+        name: 'Experience',
+        component: ExperienceView
     },
     {
-        path: '/contact',
-        name: 'Contact',
-        component: ContactView
+        path: '/vision',
+        name: 'Vision',
+        component: VisionView
     }
 ]
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(process.env.BASE_URL),
     routes
 })
 
